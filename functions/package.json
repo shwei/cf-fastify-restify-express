@@ -1,0 +1,46 @@
+{
+  "name": "cf-fastify-restify-express",
+  "version": "1.0.0",
+  "description": "Fastify, Restify, and Express frameworks in Cloud Functions",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "logs": "firebase functions:log",
+    "deploy:express": "functions deploy greetFromExpress --trigger-http",
+    "deploy:fastify": "functions deploy greetFromFastify --trigger-http",
+    "deploy:restify": "functions deploy greetFromRestify --trigger-http",
+    "debug:express": "functions debug greetFromExpress",
+    "debug:fastify": "functions debug greetFromFastify --port 6868",
+    "debug:restify": "functions debug greetFromRestify --port 7878"
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "fastify": "1.14.1",
+    "firebase-admin": "7.0.0",
+    "firebase-functions": "2.2.0",
+    "restify": "7.7.0"
+  },
+  "devDependencies": {
+    "eslint": "5.13.0",
+    "eslint-plugin-promise": "4.0.1"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "later"
+  },
+  "keywords": [
+    "cloud",
+    "functions",
+    "express",
+    "fastify",
+    "restify",
+    "js"
+  ],
+  "author": "shw",
+  "license": "ISC",
+  "engines": {
+    "node": "8"
+  }
+}
